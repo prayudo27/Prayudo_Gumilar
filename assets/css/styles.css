@@ -32,7 +32,7 @@
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 4rem;
   --bigger-font-size: 2rem;
-  --h1-font-size: 1.5rem;
+  --h1-font-size: 4rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
   --normal-font-size: 0.938rem;
@@ -54,8 +54,8 @@
   :root {
     --biggest-font-size: 6rem;
     --bigger-font-size: 3rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
+    --h1-font-size: 3rem;
+    --h2-font-size: 2.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
     --small-font-size: 0.875rem;
@@ -139,12 +139,12 @@ svg {
 }
 
 .section__title {
-  font-size: var(--h1-font-size);
+  font-size: var(--h2-font-size);
   margin-bottom: 1.5rem;
 }
 
 .section__subtitle {
-  font-size: var(--small-font-size);
+  font-size: var(--h3-font-size);
   margin-bottom: 0.25rem;
 }
 
@@ -277,7 +277,6 @@ svg {
 .home__education {
   font-size: var(--biggest-font-size);
 }
-
 
 .home__subtitle span,
 .home__title {
