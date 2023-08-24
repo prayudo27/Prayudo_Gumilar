@@ -152,6 +152,10 @@ svg {
   color: var(--first-color);
 }
 
+.section__title span {
+  color: var(--first-color);
+}
+
 .main {
   overflow: hidden; /* For animation ScrollReveal */
 }
@@ -390,7 +394,7 @@ svg {
 }
 
 .skills__content {
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(2,auto);
   column-gap: 4rem;
   justify-content: center;
   align-items: baseline;
