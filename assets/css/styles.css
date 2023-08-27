@@ -376,43 +376,19 @@ svg {
 }
 
 .skills__container {
-  padding-bottom: 2rem;
   row-gap: 3.5rem;
 }
 
-.skills__data {
-  text-align: center;
-}
-
-.skills__description {
-  margin-bottom: 2rem;
-}
-
-.skills__content,
-.skills__group {
-  display: grid;
-}
-
 .skills__content {
-  grid-template-columns: repeat(2,auto);
-  column-gap: 4rem;
-  justify-content: center;
-  align-items: baseline;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
 }
 
-.skills__group {
-  row-gap: 1rem;
-  list-style-type: decimal-leading-zero;
+.icon {
+  height: 200px;
 }
 
-.skills__item {
-  font-weight: var(--font-medium);
-  color: var(--title-color);
-}
-
-.skills__item::marker {
-  color: var(--first-color);
-}
 /*=============== SERVICES ===============*/
 .services__container {
   row-gap: 2rem;
@@ -658,6 +634,7 @@ svg {
   .skills__content {
     grid-template-columns: max-content;
     row-gap: 1rem;
+    justify-content: center;
   }
 
   .services__card {
@@ -665,11 +642,18 @@ svg {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .skills__content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 1rem;
+    justify-content: center;
+  }
+}
+
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .home__container,
   .about__container,
-  .skills_container,
   .services__container,
   .projects__container,
   .contact__container {
@@ -684,8 +668,7 @@ svg {
   }
 
   .home__container,
-  .about__container,
-  .skills__container {
+  .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
@@ -791,18 +774,13 @@ svg {
     margin-bottom: 3rem;
   }
 
-  .skills__container {
-    grid-template-columns: 340px 425px;
-    column-gap: 10rem;
-    padding-bottom: 4rem;
-  }
-
   .skills__description {
     margin-bottom: 3rem;
   }
 
   .skills__content {
     column-gap: 8rem;
+    justify-items: center;
   }
 
   .skills__item {
