@@ -386,6 +386,12 @@ font-size: var(--normal-font-size);
 /*=============== SKILLS ===============*/
 .skills {
   background-color: var(--container-color);
+
+}
+
+.title__skill {
+padding-top: 5rem;
+margin-bottom: 3rem;
 }
 
 .skills__container {
@@ -394,7 +400,7 @@ font-size: var(--normal-font-size);
 
 .skills__content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   justify-items: center;
   margin-top: 3rem;
 }
