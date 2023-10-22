@@ -119,7 +119,7 @@ svg {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1120px;
-  margin-inline: 1.5rem;
+  /* margin-inline: 1.5rem; */
 }
 
 .grid {
@@ -180,6 +180,7 @@ svg {
 .nav__logo {
   color: var(--title-color);
   font-weight: var(--font-medium);
+  margin-inline: 1.5rem;
 }
 
 .nav__logo span {
@@ -192,6 +193,7 @@ svg {
   font-size: 1.25rem;
   color: var(--title-color);
   cursor: pointer;
+  margin-inline: 1.5rem;
 }
 
 /* Navigation for mobile devices */
@@ -277,10 +279,13 @@ svg {
   text-align: center;
 }
 
-.home__subtitle,
-.home__education {
+.home__subtitle{
   font-size: var(--biggest-font-size);
 }
+
+.home__education {
+  font-size: var(--normal-font-size);
+} 
 
 .home__subtitle span,
 .home__title {
@@ -628,9 +633,9 @@ svg {
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
-  .container {
+  /* .container {
     margin-inline: 1rem;
-  }
+  } */
 
   .skills__content {
     grid-template-columns: max-content;
