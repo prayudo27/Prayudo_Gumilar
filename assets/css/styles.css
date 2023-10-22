@@ -32,6 +32,7 @@
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 4rem;
   --bigger-font-size: 2rem;
+  --big-font-size : 1.75rem
   --h1-font-size: 4rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -138,6 +139,9 @@ svg {
   font-weight: var(--font-semi-bold);
 }
 
+.section__profil {
+  font-size: var(--h3-font-size);
+}
 .section__title {
   font-size: var(--h2-font-size);
   margin-bottom: 1.5rem;
@@ -360,7 +364,11 @@ svg {
 .about__description {
   margin-bottom: 2rem;
   font-weight: var(--font-semi-bold);
-  font-size: var(--normal-font-size);
+  font-size: var(--h3-font-size)
+}
+
+.about__profil {
+font-size: var(--normal-font-size);
 }
 
 .about__image {
