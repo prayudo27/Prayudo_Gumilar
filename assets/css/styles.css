@@ -69,6 +69,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: var(--body-font);
 }
 
 html {
@@ -221,7 +222,6 @@ svg {
   flex-direction: column;
   row-gap: 3rem;
 }
-
 .nav__link {
   color: var(--title-color);
   font-weight: var(--font-medium);
@@ -270,7 +270,7 @@ svg {
 }
 
 .home__container {
-  padding-top: 2rem;
+  padding-top: 1rem;
   row-gap: 2.5rem;
 }
 
@@ -365,6 +365,7 @@ svg {
   margin-bottom: 2rem;
   font-weight: var(--font-semi-bold);
   font-size: var(--h3-font-size);
+  text-align: justify;
 }
 
 .about__profil {
