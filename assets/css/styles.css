@@ -26,6 +26,10 @@
   --text-color: hsl(228, 8%, 65%);
   --body-color: hsl(228, 15%, 20%);
   --container-color: hsl(228, 15%, 15%);
+  /* COLOR ICON */
+  --linkedin: #0a66c2;
+  --github: #00bcd4;
+  /* END OF COLOR ICON */
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -44,7 +48,7 @@
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
-  --font-bold : 700;
+  --font-bold: 700;
 
   /*========== z index ==========*/
   --z-tooltip: 10;
@@ -289,7 +293,7 @@ svg {
 }
 
 .home__education {
-  font-size: var(--h3-font-size)
+  font-size: var(--h3-font-size);
 }
 
 .home__subtitle span,
@@ -314,11 +318,13 @@ svg {
 
 .home_social-link {
   display: flex;
-  background-color: var(--first-color);
+  width: 48px;
+  height: 48px;
   padding: 0.5rem;
   color: var(--title-color);
   font-size: 1.5rem;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  border-radius: 50%;
+  outline: 2px solid white;
   transition: transform 0.4s;
 }
 
@@ -326,12 +332,29 @@ svg {
   transform: translateY(-0.25rem);
 }
 
+.home_social-link:hover:nth-child(1) {
+  background: var(--github);
+}
+.home_social-link:hover:nth-child(2) {
+  background: var(--linkedin);
+}
+.home_social-link:hover:nth-child(3) {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
 .home__image {
   justify-self: center;
 }
 
 .home__blob {
   width: 320px;
+  height: 560px;
   fill: var(--first-color);
   filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, 0.2));
 }
